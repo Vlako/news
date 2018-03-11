@@ -91,5 +91,7 @@ CONCURRENT_REQUESTS_PER_IP = 16
 
 ITEM_PIPELINES = {'news.pipelines.MongoPipeline': 1}
 
-MONGODB_URI = "mongodb://localhost:27017"
-MONGODB_DB = "news"
+MONGO_URI = "mongodb://localhost:27017"
+MONGO_DB = "news"
+
+CLOSESPIDER_ITEMCOUNT = 15000
